@@ -1,0 +1,66 @@
+GET http://localhost:8000/api/users/create?first_name=Nero&last_name=Demon&role=admin
+###
+GET http://localhost:8000/api/users/create?first_name=Beni&last_name=Morro&role=operator
+###
+GET http://localhost:8000/api/users/create?first_name=Eno&last_name=Mira
+
+
+###
+
+POST http://localhost:8000/api/users/login?name=contoh
+Content-Type: application/json
+
+{
+  "username": "Nero",
+  "password": "1234"
+}
+
+###
+
+GET http://localhost:8000/api/users/current
+Content-Type: application/json
+x-username: 1
+
+###
+
+GET http://localhost:8000/api/users/current
+Content-Type: application/json
+x-username: 2
+
+###
+
+GET http://localhost:8000/api/users/current
+Content-Type: application/json
+x-username: 3
+
+###
+
+GET http://localhost:8000/api/users/connection
+
+###
+
+GET http://localhost:8000/api/users/hello?name=Nero
+
+###
+
+GET http://localhost:8000/api/users/set-cookie?name=Nero
+
+###
+
+GET http://localhost:8000/api/users/get-cookie
+
+###
+
+GET http://localhost:8000/api/users/redirect
+
+###
+
+GET http://localhost:8000/api/users/1
+
+###
+
+POST http://localhost:8000/api/users
+
+###
+
+GET http://localhost:8000/api/users/sample
